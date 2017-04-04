@@ -96,7 +96,12 @@ a.post_preview_a {
 
 div.site_map {
 }
-
+.field-validation-error {
+    color: #e80c4d;
+    font-weight: bold;
+    font-size: small;
+    padding-left: 1em;
+}
 
 div.footer {
   text-align: center;

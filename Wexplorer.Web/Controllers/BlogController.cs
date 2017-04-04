@@ -44,6 +44,10 @@ namespace Wexplorer.Web.Controllers
         {
             if (ModelState.IsValid)
             {
+                ViewBag.NameUser = _postModel.Comment.NameUser;
+                ViewBag.Email = _postModel.Comment.Email;
+                ViewBag.Commentary = _postModel.Comment.Commentary;
+
                 _postModel.Comment.PublishedDate = DateTime.Now;
                 _repository.SaveComment(_postModel.Comment);
             }

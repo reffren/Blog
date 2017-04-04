@@ -4,6 +4,17 @@
     ViewBag.Title = "Post";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@if (ViewData.ModelState.IsValid)
+{
+    if (@ViewBag.Name != null)
+    {
+        <b>
+            Name : @ViewBag.NameUser<br />
+            Email : @ViewBag.Email<br />
+            Commentary : @ViewBag.Commentary
+        </b>
+    }
+}
 <div itemscope itemtype="http://schema.org/BlogPosting" class="post">
     <p>Автор: <span itemprop="author">Тимур Казанский</span><br></p>
     <span>Дата: <time itemprop="datePublished" class="post_date">@Model.Post.PublishedDate.ToString("dd/MM/yyyy hh:mm")</time></span>
@@ -17,6 +28,7 @@
         </div>
         @using (Html.BeginForm("Comments", "Blog", FormMethod.Post))
         {
+            @Html.ValidationSummary(true)
             <table>
                 <tr>
                     <td>
@@ -38,8 +50,8 @@
                 </tr>
                 <tr>
                     <td>
-                        @Html.TextAreaFor(m => m.Comment.Commentary, new { @id = "editTextArea", placeholder = "Введите текст комментария" })
-                        @Html.ValidationMessageFor(m => m.Comment.Email)
+                        @Html.ValidationMessageFor(m => m.Comment.Commentary)
+                        @Html.TextAreaFor(m => m.Comment.Commentary, new { @id = "editTextArea", placeholder = "Введите текст комментария" })                      
                     </td>
                 </tr>
             </table>
@@ -65,3 +77,6 @@
     <div itemscope itemtype="http://schema.org/Blog" class="posts">
     </div>
 </div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryValidate")
+}
