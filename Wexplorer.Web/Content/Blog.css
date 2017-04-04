@@ -1,0 +1,115 @@
+﻿body {
+    font-family: Georgia,Times,"Times New Roman",serif;
+    color: black;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+div.all {
+    width: 97%;
+}
+
+
+div.navigation {
+    float:right;
+}
+ul.menu_items {
+    
+}
+ul.menu_items li {
+    display: inline-block;
+}
+ul.menu_items li a{
+    position: relative;
+    display: block;
+    margin-right: 1.618em;
+    padding: 15px 0 5px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: "Helvetica Neue","Segoe UI",Arial,sans-serif;
+}
+ul.menu_items li a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: black;
+    height: 2px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+ul.menu_items li a:hover:before, ul.menu_items li a:focus:before, ul.menu_items li a:active:before {
+  left: 0;
+  right: 0;
+}
+
+div.content {
+    float:left;
+    width: 70%;
+    height: 97%;
+    font-size: 1.25rem;
+    padding-left: 3em;
+}
+div.posts {
+}
+div.posts .posts_preview_h1 {
+    font-size: 2.25rem;
+    line-height: 1.33333;
+    margin-bottom: 1.5rem;
+}
+
+
+
+/*Post*/
+.editTextBox {
+    display: block;
+    float: left;
+    width: 260px;
+    margin: 0 0 1.2em;
+    padding: 5px 0.7em;
+    border: solid 1px #ccc;
+    background: #f0f0f0;
+    border-radius: 5px;
+}
+#editTextArea {
+    border: solid 1px #ccc;
+    background: #f0f0f0;
+    border-radius: 5px;
+    padding: 7px 1.5%;
+    margin: 0px 0px 15px;
+    width: 552px;
+    height: 198px;
+}
+a.post_preview_a {
+    color:black;
+    text-decoration: none;
+}
+
+div.site_map {
+}
+
+
+div.footer {
+  text-align: center;
+  padding: .5em 0 0 0;
+  font-style: italic;
+  clear: left;
+}
+
+
+
+
+/*Admin*/
+
+div.adminEditPost {
+  padding-top: 2em;
+}

@@ -1,0 +1,80 @@
+c:\users\tim\documents\visual studio 2013\Projects\Wexplorer\Wexplorer.Web\obj\Debug\Wexplorer.Web.csprojResolveAssemblyReference.cache
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\Wexplorer.Web.dll.config
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\Wexplorer.Web.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\Wexplorer.Web.pdb
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\EntityFramework.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\Ninject.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\System.Web.Helpers.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\System.Web.Mvc.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\System.Web.Razor.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\System.Web.Webpages.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\System.Web.Webpages.Razor.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\Wexplorer.Data.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\Wexplorer.Data.pdb
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\EntityFramework.xml
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\Ninject.xml
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\System.Web.Razor.xml
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\System.Web.Webpages.xml
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\System.Web.Webpages.Razor.xml
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\System.Web.Helpers.xml
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\System.Web.Mvc.xml
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\ru\System.Web.Razor.resources.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\ru\System.Web.Webpages.resources.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\ru\System.Web.Webpages.Deployment.resources.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\ru\System.Web.Webpages.Razor.resources.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\ru\System.Web.Helpers.resources.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\ru\System.Web.Mvc.resources.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\obj\Debug\Wexplorer.Web.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\obj\Debug\Wexplorer.Web.pdb
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\Antlr3.Runtime.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\Newtonsoft.Json.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\System.Web.Optimization.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\WebGrease.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\Antlr3.Runtime.pdb
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\Newtonsoft.Json.xml
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\System.Web.Optimization.xml
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\Wexplorer.Web.dll.config
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\Wexplorer.Web.dll
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\Wexplorer.Web.pdb
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\Antlr3.Runtime.dll
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\EntityFramework.dll
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\Newtonsoft.Json.dll
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\Ninject.dll
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\System.Web.Helpers.dll
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\System.Web.Mvc.dll
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\System.Web.Optimization.dll
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\System.Web.Razor.dll
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\System.Web.Webpages.dll
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\System.Web.Webpages.Razor.dll
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\WebGrease.dll
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\Wexplorer.Data.dll
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\Wexplorer.Data.pdb
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\Antlr3.Runtime.pdb
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\EntityFramework.xml
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\Newtonsoft.Json.xml
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\Ninject.xml
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\System.Web.Optimization.xml
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\System.Web.Razor.xml
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\System.Web.Webpages.xml
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\System.Web.Webpages.Razor.xml
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\System.Web.Helpers.xml
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\System.Web.Mvc.xml
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\ru\System.Web.Razor.resources.dll
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\ru\System.Web.Webpages.resources.dll
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\ru\System.Web.Webpages.Deployment.resources.dll
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\ru\System.Web.Webpages.Razor.resources.dll
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\ru\System.Web.Helpers.resources.dll
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\ru\System.Web.Mvc.resources.dll
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\obj\Debug\Wexplorer.Web.csprojResolveAssemblyReference.cache
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\obj\Debug\Wexplorer.Web.dll
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\obj\Debug\Wexplorer.Web.pdb

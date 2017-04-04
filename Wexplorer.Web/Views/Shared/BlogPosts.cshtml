@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Wexplorer.Data.Entities.Post>
+
+@foreach (var p in Model)
+{
+    <article itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 itemprop="name" class="posts_preview_h1">@Html.PostLink(p.Title, p.UrlPost, p.Category.UrlCategory, "Post")</h1>
+        <p class="posts_date">Дата: <time itemprop="datePublished">@p.PublishedDate.ToString("dd/MM/yyyy hh:mm")</time></p>
+        <p class="preview_img"><img itemprop="image" src="@Url.Content(p.Picture)" /></p>
+        <p itemprop="description" class="post_preview">@p.Description</p>
+        <p class="category">Категория: @Html.CategoryLink(p.Category.NameCategory, p.Category.UrlCategory, "PostsOfCategory")</p>
+    </article>
+}
+
