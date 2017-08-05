@@ -108,8 +108,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Blog.css" />
-    <Content Include="Content\img_preview\8 marta.jpg" />
+    <Content Include="Content\photo_for_preview\preview-rewriterule-step5.jpg" />
+    <Content Include="Content\photo_for_preview\preview-vk_step_six.jpg" />
     <Content Include="Global.asax" />
+    <None Include="Properties\PublishProfiles\wexplorer.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\customJSValidation.js" />
     <None Include="Scripts\jquery-3.1.1-vsdoc.js" />
@@ -172,7 +174,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\qw\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Wexplorer.Data\Wexplorer.Data.csproj">

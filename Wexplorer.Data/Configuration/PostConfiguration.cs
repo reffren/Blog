@@ -16,7 +16,7 @@ namespace Wexplorer.Data.Configuration
             Property(p => p.Description).HasMaxLength(160);
             Property(p => p.PublishedDate).HasColumnType("datetime2");
             Property(p => p.LastModifiedDate).HasColumnType("datetime2");
-            Property(p => p.UrlPost).HasMaxLength(20);
+            Property(p => p.UrlPost).HasMaxLength(100);
             Property(p => p.Picture).HasMaxLength(100);
         }
     }

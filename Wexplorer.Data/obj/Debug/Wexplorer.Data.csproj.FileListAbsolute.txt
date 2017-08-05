@@ -25,12 +25,7 @@ C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Data\bin\
 C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Data\bin\ru\System.Web.Mvc.resources.dll
 C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Data\obj\Debug\Wexplorer.Data.dll
 C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Data\obj\Debug\Wexplorer.Data.pdb
-C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Data\obj\Debug\Wexplorer.Data.Migrations.ChangeComment.resources
-C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Data\obj\Debug\Wexplorer.Data.csproj.GenerateResource.Cache
 C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Data\obj\Debug\Wexplorer.Data.csprojResolveAssemblyReference.cache
-C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Data\obj\Debug\Wexplorer.Data.Migrations.Updated.resources
-C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Data\obj\Debug\Wexplorer.Data.Migrations.config.resources
-C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Data\obj\Debug\Wexplorer.Data.Migrations.newconfig.resources
 C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Data\bin\Wexplorer.Data.dll.config
 C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Data\bin\Wexplorer.Data.dll
 C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Data\bin\Wexplorer.Data.pdb
@@ -65,3 +60,5 @@ C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Data\obj\Debug\Wexplorer.Data.csproj.Ge
 C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Data\obj\Debug\Wexplorer.Data.dll
 C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Data\obj\Debug\Wexplorer.Data.pdb
 C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Data\obj\Debug\Wexplorer.Data.Migrations.AddProperties.resources
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Data\obj\Debug\Wexplorer.Data.Migrations.smakkChange.resources
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Data\obj\Debug\Wexplorer.Data.csproj.GenerateResource.Cache

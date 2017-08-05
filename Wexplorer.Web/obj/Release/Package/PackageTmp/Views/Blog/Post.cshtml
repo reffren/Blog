@@ -1,0 +1,82 @@
+﻿@model Wexplorer.Web.Models.PostModel
+
+@{
+    ViewBag.Title = "Post";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@if (ViewData.ModelState.IsValid)
+{
+    if (@ViewBag.Name != null)
+    {
+        <b>
+            Name : @ViewBag.NameUser<br />
+            Email : @ViewBag.Email<br />
+            Commentary : @ViewBag.Commentary
+        </b>
+    }
+}
+<div itemscope itemtype="http://schema.org/BlogPosting" class="post">
+    <p>Автор: <span itemprop="author">Тимур Казанский</span><br></p>
+    <span>Дата: <time itemprop="datePublished" class="post_date">@Model.Post.PublishedDate.ToString("dd/MM/yyyy hh:mm")</time></span>
+    <h1 itemprop="headline" class="post_preview_h1">@Model.Post.Title</h1>
+    <article itemprop="articleBody">@Html.Raw(Model.Post.Content)</article>
+    <p>Категория: <span itemprop="articleSection">@Html.CategoryLink(Model.Post.Category.NameCategory, Model.Post.Category.UrlCategory, "Post")</span></p>
+
+    <div class="commentaries">
+        <div class="comment_div_h3">
+            <h3 class="comment_h3">Оставьте ваш комментарий</h3>
+        </div>
+        @using (Html.BeginForm("Comments", "Blog", FormMethod.Post))
+        {
+            @Html.ValidationSummary(true)
+            <table>
+                <tr>
+                    <td>
+                        @Html.TextBoxFor(m => m.Comment.NameUser, new { @class = "editTextBox", placeholder = "Ваше имя *" })
+                        @Html.ValidationMessageFor(m => m.Comment.NameUser)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.TextBoxFor(m => m.Comment.Site, new { @class = "editTextBox", placeholder = "Сайт (необязательно)" })
+                        @Html.ValidationMessageFor(m => m.Comment.Site)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.TextBoxFor(m => m.Comment.Email, new { @class = "editTextBox", placeholder = "Ваш Email *" })
+                        @Html.ValidationMessageFor(m => m.Comment.Email)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.ValidationMessageFor(m => m.Comment.Commentary)
+                        @Html.TextAreaFor(m => m.Comment.Commentary, new { @id = "editTextArea", placeholder = "Введите текст комментария" })                      
+                    </td>
+                </tr>
+            </table>
+            @Html.HiddenFor(p => p.Comment.PostID, new { @Value = Model.Post.PostID });
+            <div><input type="submit" value="Оставить комментарий" class="comment_button" /></div>
+        }
+        <div class="all_comments" itemprop="comment" itemscope="itemscope" itemtype="http://schema.org/UserComments">
+            <h4 class="comment_h4">Комментарии: @Model.Post.Comments.Count().ToString()</h4>
+
+            @foreach (var com in Model.Post.Comments)
+            {
+                <div class="comment_img"></div>
+                <div class="comment_div">
+                    <p id="comment_name" itemprop="creator">@com.Site</p>
+                    <p id="comment_p" itemprop="commentText">
+                        @com.Commentary
+                        <time class="comment_time" itemprop="commentTime">@com.PublishedDate</time>
+                </div>
+            }
+        </div>
+
+    </div>
+    <div itemscope itemtype="http://schema.org/Blog" class="posts">
+    </div>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryValidate")
+}

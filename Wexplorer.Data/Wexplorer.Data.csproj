@@ -91,25 +91,9 @@
     <Compile Include="Entities\Post.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Comment.cs" />
-    <Compile Include="Migrations\201703211954460_ChangeComment.cs" />
-    <Compile Include="Migrations\201703211954460_ChangeComment.Designer.cs">
-      <DependentUpon>201703211954460_ChangeComment.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201703221833164_Updated.cs" />
-    <Compile Include="Migrations\201703221833164_Updated.Designer.cs">
-      <DependentUpon>201703221833164_Updated.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201703261914036_config.cs" />
-    <Compile Include="Migrations\201703261914036_config.Designer.cs">
-      <DependentUpon>201703261914036_config.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201703261917530_newconfig.cs" />
-    <Compile Include="Migrations\201703261917530_newconfig.Designer.cs">
-      <DependentUpon>201703261917530_newconfig.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201704041809580_AddProperties.cs" />
-    <Compile Include="Migrations\201704041809580_AddProperties.Designer.cs">
-      <DependentUpon>201704041809580_AddProperties.cs</DependentUpon>
+    <Compile Include="Migrations\201708051416344_smakkChange.cs" />
+    <Compile Include="Migrations\201708051416344_smakkChange.Designer.cs">
+      <DependentUpon>201708051416344_smakkChange.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -117,6 +101,7 @@
   <ItemGroup>
     <Content Include="Web.config" />
     <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\Wexplorer.Data.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -125,20 +110,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201703211954460_ChangeComment.resx">
-      <DependentUpon>201703211954460_ChangeComment.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703221833164_Updated.resx">
-      <DependentUpon>201703221833164_Updated.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703261914036_config.resx">
-      <DependentUpon>201703261914036_config.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703261917530_newconfig.resx">
-      <DependentUpon>201703261917530_newconfig.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201704041809580_AddProperties.resx">
-      <DependentUpon>201704041809580_AddProperties.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201708051416344_smakkChange.resx">
+      <DependentUpon>201708051416344_smakkChange.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

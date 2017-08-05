@@ -18,7 +18,7 @@
 <div itemscope itemtype="http://schema.org/BlogPosting" class="post">
     <p>Автор: <span itemprop="author">Тимур Казанский</span><br></p>
     <span>Дата: <time itemprop="datePublished" class="post_date">@Model.Post.PublishedDate.ToString("dd/MM/yyyy hh:mm")</time></span>
-    <h1 itemprop="headline" class="post_preview_h1">@Model.Post.Title</h1>
+    <h2 itemprop="headline" class="post_preview_h2">@Model.Post.Title</h2>
     <article itemprop="articleBody">@Html.Raw(Model.Post.Content)</article>
     <p>Категория: <span itemprop="articleSection">@Html.CategoryLink(Model.Post.Category.NameCategory, Model.Post.Category.UrlCategory, "Post")</span></p>
 

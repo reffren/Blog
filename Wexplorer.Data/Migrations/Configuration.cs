@@ -9,8 +9,7 @@ namespace Wexplorer.Data.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
-            ContextKey = "Wexplorer.Data.Concrete.EFContext";
+            AutomaticMigrationsEnabled = false;
         }
 
         protected override void Seed(Wexplorer.Data.Concrete.EFContext context)
