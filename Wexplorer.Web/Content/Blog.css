@@ -3,15 +3,10 @@
     font-size: 14px;
     line-height: 170%;
 }
-img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-}
+
 div.all {
     width: 97%;
 }
-
 
 div.navigation {
     float:right;
@@ -58,7 +53,7 @@ ul.menu_items li a:hover:before, ul.menu_items li a:focus:before, ul.menu_items 
 
 div.content {
     float:left;
-    width: 70%;
+    width: 60%;
     height: 97%;
     padding-left: 3em;
 }
@@ -71,13 +66,18 @@ h2.posts_preview_h2 {
     font-size: 28px;
     font-family: 'Fira Sans',sans-serif;
     margin-bottom: 10px;
+    color: #767676;
 }
 
 .posts_date {
     color: #7e7e7e;
     font-size: 12px;
 }
-
+.preview_img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
 .category {
     color: #7e7e7e;
     font-size: 15px;
@@ -146,6 +146,70 @@ div.pages a:active {
   box-shadow: 0 0 0 1px #bbb inset, 0 1px 3px rgba(0,0,0,.5) inset, 0 1px 2px #fff;
 }
 
+/*SideBar*/
+
+.side_bar {
+float: right;
+}
+.form_user_search {
+    padding-top: 35px;
+}
+.podpiska {
+margin-top: 40px;
+margin-right: 1em;
+border: solid 1px #7b96bc;
+padding: 1em;
+border-radius: 10px;
+}
+.user_search, .podpiska_mail {
+box-shadow: -1px -1px 1px #aaaaad;
+border: solid 1px #ccc;
+background: #f0f0f0;
+border-radius: 5px;
+padding-left: 1em;
+padding-bottom: 7px;
+padding-top: 4px;
+}
+.podpiska_mail {
+border: solid 1px #7b96bc;
+}
+
+.search_button, .podpiska_button{
+display: inline-block;
+  width: 5em;
+  height: 2em;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  color: rgb(0,0,0);
+  outline: none;
+  border: 1px solid rgba(0,0,0,.4);
+  border-top-color: rgba(0,0,0,.3);
+  border-radius: 2px;
+  background: linear-gradient(rgb(255,255,255), rgb(240,240,240));
+  box-shadow:
+   0 0 3px rgba(0,0,0,0) inset,
+   0 1px 1px 1px rgba(255,255,255,.2),
+   0 -1px 1px 1px rgba(0,0,0,0);
+  transition: .2s ease-in-out;
+  cursor: pointer;
+}
+.podpiska_button{
+  width: 9em;
+}
+.social {
+padding-top: 20px;
+}
+.social_h {
+padding-top: 10px;
+padding-bottom: 10px;
+text-align: center;
+color: #767676;
+}
+.social_div {
+text-align: center;
+}
 /*Post*/
 
 h2.post_preview_h2 {
@@ -153,6 +217,7 @@ h2.post_preview_h2 {
     font-weight: 500;
     font-size: 28px;
     font-family: 'Fira Sans',sans-serif;
+    color: #515050;
 }
 
 .post_date {
@@ -180,7 +245,7 @@ h2.post_preview_h2 {
     height: 198px;
 }
 a.post_preview_a {
-    color:black;
+    color: #515050;
     text-decoration: none;
 }
 

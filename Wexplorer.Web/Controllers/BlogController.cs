@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using Wexplorer.Data.Abstract;
@@ -15,7 +17,7 @@ namespace Wexplorer.Web.Controllers
         
         PostsModel postsModel;
         PostModel postModel;
-        public int PageSize = 3;
+        public int PageSize = 10;
         public BlogController(IBlogRepository blogRepository)
         {
             _repository = blogRepository;
@@ -42,14 +44,32 @@ namespace Wexplorer.Web.Controllers
         [HttpPost]
         public ActionResult Post(PostModel _postModel)
         {
+            // if (ModelState.IsValid && status)
+
             if (ModelState.IsValid)
             {
+                var response = Request["g-recaptcha-response"];
+                string secretKey = "6Ldg5SsUERGAAMukGNb_POURGBVQFGFGIIIFRUFUOJFJ_c7ERG7W";
+                var client = new WebClient();
+                var result = client.DownloadString(string.Format("https://www.google.com/recaptcha/api/siteverify?secret={0}&response={1}", secretKey, response));
+                var obj = JObject.Parse(result);
+                var status = (bool)obj.SelectToken("success");
+               // ViewBag.Message = status ? "Google reCaptcha validation success" : "Google reCaptcha validation failed";
+
                 ViewBag.NameUser = _postModel.Comment.NameUser;
                 ViewBag.Email = _postModel.Comment.Email;
                 ViewBag.Commentary = _postModel.Comment.Commentary;
 
-                _postModel.Comment.PublishedDate = DateTime.Now;
-                _repository.SaveComment(_postModel.Comment);
+                if (status)
+                {
+                    _postModel.Comment.PublishedDate = DateTime.Now;
+                    _repository.SaveComment(_postModel.Comment);
+                }
+                else
+                {
+                     ViewBag.Message = "Google reCaptcha validation failed";
+                }
+
             }
             string urlPost = _repository.Posts.FirstOrDefault(p => p.PostID == _postModel.Comment.PostID).UrlPost;
 

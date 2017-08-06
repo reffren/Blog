@@ -18,7 +18,7 @@
 <div itemscope itemtype="http://schema.org/BlogPosting" class="post">
     <p>Автор: <span itemprop="author">Тимур Казанский</span><br></p>
     <span>Дата: <time itemprop="datePublished" class="post_date">@Model.Post.PublishedDate.ToString("dd/MM/yyyy hh:mm")</time></span>
-    <h1 itemprop="headline" class="post_preview_h1">@Model.Post.Title</h1>
+    <h2 itemprop="headline" class="post_preview_h2">@Model.Post.Title</h2>
     <article itemprop="articleBody">@Html.Raw(Model.Post.Content)</article>
     <p>Категория: <span itemprop="articleSection">@Html.CategoryLink(Model.Post.Category.NameCategory, Model.Post.Category.UrlCategory, "Post")</span></p>
 
@@ -56,6 +56,7 @@
                 </tr>
             </table>
             @Html.HiddenFor(p => p.Comment.PostID, new { @Value = Model.Post.PostID });
+            <div class="g-recaptcha" data-sitekey="6Ldg5SsUAAAAAIQTJpQgGcqQEzOe6TKS3pR5zBLF"></div>
             <div><input type="submit" value="Оставить комментарий" class="comment_button" /></div>
         }
         <div class="all_comments" itemprop="comment" itemscope="itemscope" itemtype="http://schema.org/UserComments">
@@ -78,5 +79,6 @@
     </div>
 </div>
 @section Scripts {
+    <script src='https://www.google.com/recaptcha/api.js' type="text/javascript"></script>
     @Scripts.Render("~/bundles/jqueryValidate")
 }

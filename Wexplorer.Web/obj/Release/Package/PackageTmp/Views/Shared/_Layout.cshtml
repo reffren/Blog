@@ -25,6 +25,7 @@
         <div class="content">
             @RenderBody()
         </div>
+        @{Html.RenderAction("Subscription", "SideBar");}
         <div itemscope itemtype="http://schema.org/WPFooter" class="footer">
             <p>&copy; @DateTime.Now.Year - wexplorer.ru</p>
         </div>

@@ -26,3 +26,5 @@ C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Data\bin\
 C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Data\obj\Release\Wexplorer.Data.csprojResolveAssemblyReference.cache
 C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Data\obj\Release\Wexplorer.Data.dll
 C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Data\obj\Release\Wexplorer.Data.pdb
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Data\obj\Release\Wexplorer.Data.Migrations.smakkChange.resources
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Data\obj\Release\Wexplorer.Data.csproj.GenerateResource.Cache
