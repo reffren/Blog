@@ -54,6 +54,21 @@ namespace Wexplorer.Web
                 );
 
             routes.MapRoute(null,
+                "admin/login",
+                new { controller = "Admin", action = "Login" }
+                );
+
+            routes.MapRoute(null,
+                "error404",
+                new { controller = "ErrorHandler", action = "NotFound" }
+                );
+
+             routes.MapRoute(null,
+                "error",
+                new { controller = "ErrorHandler", action = "Index" }
+                );
+
+            routes.MapRoute(null,
                "{cat}",
                new { controller = "Blog", action = "PostsOfCategory", page = 1 }
                );

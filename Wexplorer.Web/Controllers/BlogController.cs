@@ -32,13 +32,16 @@ namespace Wexplorer.Web.Controllers
             return View(postsModel);
         }
 
-        public ViewResult Post(string title)
+        public ActionResult Post(string title)
         {
             postModel = new PostModel()
             {
                 Post = _repository.Posts.FirstOrDefault(f => f.UrlPost == title)
             };
-            return View(postModel);
+            if(postModel.Post == null)
+                return HttpNotFound();
+            else
+                return View(postModel);
         }
 
         [HttpPost]
@@ -49,7 +52,7 @@ namespace Wexplorer.Web.Controllers
             if (ModelState.IsValid)
             {
                 var response = Request["g-recaptcha-response"];
-                string secretKey = "6Ldg5SsUERGAAMukGNb_POURGBVQFGFGIIIFRUFUOJFJ_c7ERG7W";
+                string secretKey = "6Ldg5SsUAAAAAMERGRGukGNb_OYh1TBpERGERGUYFXPWi_c7EERGREGERGERG7W";
                 var client = new WebClient();
                 var result = client.DownloadString(string.Format("https://www.google.com/recaptcha/api/siteverify?secret={0}&response={1}", secretKey, response));
                 var obj = JObject.Parse(result);
@@ -82,13 +85,16 @@ namespace Wexplorer.Web.Controllers
             return View(siteMap);
         }
 
-        public ViewResult PostsOfCategory(string cat, int page = 1)
+        public ActionResult PostsOfCategory(string cat, int page = 1)
         {
             postsModel = new PostsModel();
             postsModel.Posts = _repository.Posts.Where(p => p.Category.UrlCategory == cat).ToList().OrderBy(p => p.PostID).Skip((page - 1) * PageSize).Take(PageSize);
             postsModel.PagingInfo = new PagingInfo { CurrentPage = page, ItemsPerPage = PageSize, TotalItems = _repository.Posts.Where(p => p.Category.UrlCategory == cat).Count() };
-
-            return View("PostsOfCategory", postsModel);
+            
+            if (postsModel.Posts.Count() == 0)
+                return HttpNotFound();
+            else
+                return View("PostsOfCategory", postsModel);
         }
 
         public ViewResult AboutMe()

@@ -108,6 +108,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Blog.css" />
+    <Content Include="Content\Images\error.png" />
     <Content Include="Content\photo_for_preview\preview-rewriterule-step5.jpg" />
     <Content Include="Content\photo_for_preview\preview-vk_step_six.jpg" />
     <Content Include="Global.asax" />
@@ -135,6 +136,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\ErrorHandlerController.cs" />
     <Compile Include="Controllers\SideBarController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -142,6 +144,7 @@
     <Compile Include="Helpers\PagingHelper.cs" />
     <Compile Include="Infrastructure\NinjectFactory.cs" />
     <Compile Include="Models\AdminModel.cs" />
+    <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Models\PostModel.cs" />
     <Compile Include="Models\PostsModel.cs" />
     <Compile Include="Models\PagingInfo.cs" />
@@ -167,6 +170,9 @@
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
     <Content Include="Views\SideBar\Subscription.cshtml" />
+    <Content Include="Views\ErrorHandler\Index.cshtml" />
+    <Content Include="Views\ErrorHandler\NotFound.cshtml" />
+    <Content Include="Views\Admin\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

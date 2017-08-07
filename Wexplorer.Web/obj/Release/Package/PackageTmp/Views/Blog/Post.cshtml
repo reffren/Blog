@@ -26,7 +26,7 @@
         <div class="comment_div_h3">
             <h3 class="comment_h3">Оставьте ваш комментарий</h3>
         </div>
-        @using (Html.BeginForm("Comments", "Blog", FormMethod.Post))
+        @using (Html.BeginForm("Post", "Blog", FormMethod.Post))
         {
             @Html.ValidationSummary(true)
             <table>

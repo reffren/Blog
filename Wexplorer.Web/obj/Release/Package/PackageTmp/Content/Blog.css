@@ -266,7 +266,11 @@ div.footer {
 }
 
 
-
+.error_message {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
 
 /*Admin*/
 
