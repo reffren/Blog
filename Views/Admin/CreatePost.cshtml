@@ -1,0 +1,12 @@
+﻿@model Wexplorer.Web.Models.AdminModel
+@{
+    ViewBag.Title = "CreatePost";
+}
+@Html.Partial("AdminMenu")
+<div class="adminEditPost">
+    @using (Html.BeginForm("EditPost", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.Partial("CreateEditPost");
+    }
+</div>
+

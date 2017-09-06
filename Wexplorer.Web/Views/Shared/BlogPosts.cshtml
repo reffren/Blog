@@ -3,16 +3,12 @@
 @foreach (var p in Model)
 {
     <article itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
-        <h2 itemprop="name" class="posts_preview_h2">@Html.PostLink(p.Title, p.UrlPost, p.Category.UrlCategory, "Post")</h2>
-        <span class="posts_date">Дата: <time itemprop="datePublished">@p.PublishedDate.ToString("dd/MM/yyyy hh:mm")</time></span>
-        <p><img itemprop="image" class="preview_img" src="@Url.Content(p.Picture)" /></p>
-        <p itemprop="description" class="post_preview">@p.Description</p>
-        <p class="category">Категория: @Html.CategoryLink(p.Category.NameCategory, p.Category.UrlCategory, "PostsOfCategory")</p>
-        <button onclick="new_page('_@p.Category.UrlCategory/@p.UrlPost')" class="posts_btn">Читать дальше</button>
-    </article>
+        <h2 itemprop="name" class="posts_preview_h2"><a class="post_preview_a" href="@("http://wexplorer.ru/" + p.Category.UrlCategory + "/" + p.UrlPost)">@p.Title</a></h2>
+    <span class="posts_date">Дата: <time itemprop="datePublished">@p.PublishedDate.ToString("dd/MM/yyyy hh:mm")</time></span>
+    <p><img itemprop="image" class="preview_img" src="@Url.Content(p.Picture)" /></p>
+    <p itemprop="description" class="post_preview">@p.Description</p>
+    <p class="category">Категория: @Html.CategoryLink(p.Category.NameCategory, p.Category.UrlCategory, "PostsOfCategory")</p>
+    <button onclick="new_page('_@p.Category.UrlCategory/@p.UrlPost')" class="posts_btn">Читать дальше</button>
+</article>
+    <hr />
 }
-<script type="text/javascript">
-    function new_page(link) {
-        window.location.assign(link.replace("_", "http://wexplorer.ru/"));
-    }
-</script>

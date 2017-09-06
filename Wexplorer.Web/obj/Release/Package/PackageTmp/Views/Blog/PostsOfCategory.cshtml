@@ -1,6 +1,7 @@
 ﻿@model Wexplorer.Web.Models.PostsModel
 @{
-    ViewBag.Title = "Category";
+    ViewBag.Canonical = "http://wexplorer.ru/" + Model.Posts.Select(s => s.Category.UrlCategory).First();
+    ViewBag.Title = Model.Posts.Select(s => s.Category.NameCategory).First();
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div itemscope itemtype="http://schema.org/Blog" class="posts">

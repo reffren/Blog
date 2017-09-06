@@ -26,7 +26,7 @@ namespace Wexplorer.Web.Controllers
         public ViewResult Posts(int page = 1)
         {
             postsModel = new PostsModel();
-            postsModel.Posts = _repository.Posts.ToList().OrderBy(p => p.PostID).Skip((page - 1) * PageSize).Take(PageSize);
+            postsModel.Posts = _repository.Posts.ToList().OrderByDescending(p => p.PostID).Skip((page - 1) * PageSize).Take(PageSize);
             postsModel.PagingInfo = new PagingInfo { CurrentPage = page, ItemsPerPage = PageSize, TotalItems = _repository.Posts.Count() };
 
             return View(postsModel);
@@ -38,6 +38,7 @@ namespace Wexplorer.Web.Controllers
             {
                 Post = _repository.Posts.FirstOrDefault(f => f.UrlPost == title)
             };
+
             if(postModel.Post == null)
                 return HttpNotFound();
             else
@@ -47,17 +48,14 @@ namespace Wexplorer.Web.Controllers
         [HttpPost]
         public ActionResult Post(PostModel _postModel)
         {
-            // if (ModelState.IsValid && status)
-
             if (ModelState.IsValid)
             {
                 var response = Request["g-recaptcha-response"];
-                string secretKey = "6Ldg5SsUAAAAAMERGRGukGNb_OYh1TBpERGERGUYFXPWi_c7EERGREGERGERG7W";
+                string secretKey = "6Ldg5RGRGRGukGNb_OYhRFGRFGpUYFXPWi_c7RGRGW";
                 var client = new WebClient();
                 var result = client.DownloadString(string.Format("https://www.google.com/recaptcha/api/siteverify?secret={0}&response={1}", secretKey, response));
                 var obj = JObject.Parse(result);
                 var status = (bool)obj.SelectToken("success");
-               // ViewBag.Message = status ? "Google reCaptcha validation success" : "Google reCaptcha validation failed";
 
                 ViewBag.NameUser = _postModel.Comment.NameUser;
                 ViewBag.Email = _postModel.Comment.Email;
@@ -97,7 +95,7 @@ namespace Wexplorer.Web.Controllers
                 return View("PostsOfCategory", postsModel);
         }
 
-        public ViewResult AboutMe()
+        public ActionResult AboutMe()
         {
             return View();
         }

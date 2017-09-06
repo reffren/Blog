@@ -1,7 +1,11 @@
-﻿
+﻿@model Wexplorer.Web.Models.PostModel
 @{
-    ViewBag.Title = "AboutMe";
+    ViewBag.Canonical = "http://wexplorer.ru/ob-avtore";
+    ViewBag.Title = "Страница на которой автор блога wexplorer.ru рассказывает о себе";
 }
 
-<h2>AboutMe</h2>
+<h2>Автор</h2>
+<p>Привет всем! Меня зовут Тимур! Моя жизнь это – программирование, стартапы, языки и путешествия. Об этом и будет этот блог. </p>
+    @Html.Partial("BestPages")
+    @*@Html.Partial("Comments")*@
 

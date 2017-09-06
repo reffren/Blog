@@ -1,0 +1,52 @@
+﻿@model Wexplorer.Web.Models.PostModel
+<div class="commentaries">
+        <div class="comment_div_h3">
+            <h3 class="comment_h3">Оставьте ваш комментарий</h3>
+        </div>
+        @using (Html.BeginForm("Post", "Blog", FormMethod.Post))
+        {
+            @Html.ValidationSummary(true)
+            <table>
+                <tr>
+                    <td>
+                        @Html.TextBoxFor(m => m.Comment.NameUser, new { @class = "editTextBox", placeholder = "Ваше имя *" })
+                        @Html.ValidationMessageFor(m => m.Comment.NameUser)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.TextBoxFor(m => m.Comment.Site, new { @class = "editTextBox", placeholder = "Сайт (необязательно)" })
+                        @Html.ValidationMessageFor(m => m.Comment.Site)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.TextBoxFor(m => m.Comment.Email, new { @class = "editTextBox", placeholder = "Ваш Email *" })
+                        @Html.ValidationMessageFor(m => m.Comment.Email)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.ValidationMessageFor(m => m.Comment.Commentary)
+                        @Html.TextAreaFor(m => m.Comment.Commentary, new { @id = "editTextArea", placeholder = "Введите текст комментария" })                      
+                    </td>
+                </tr>
+            </table>
+            @Html.HiddenFor(p => p.Comment.PostID, new { @Value = Model.Post.PostID });
+            <div class="g-recaptcha" data-sitekey="6Ldg5SsUAAAAAIQTtrhrthrthttTHHTnTnGtnNGgF"></div>
+            <div><input type="submit" value="Оставить комментарий" class="comment_button" /></div>
+        }
+        <div class="all_comments" itemprop="comment" itemscope="itemscope" itemtype="http://schema.org/UserComments">
+            <h4 class="comment_h4">Комментарии: @Model.Post.Comments.Count().ToString()</h4>
+
+            @foreach (var com in Model.Post.Comments)
+            {
+                <div class="comment_img">@Html.Gravatar(@com.Email, 80, new { Title = "My Gravatar", Alt = "Gravatar" })</div>
+                <div class="comment_div">
+                    <p id="comment_name" itemprop="creator">@com.NameUser</p>
+                    <p id="comment_p" itemprop="commentText">@com.Commentary</p>
+                        <time class="comment_time" itemprop="commentTime">@com.PublishedDate</time>
+                </div>
+            }
+        </div>
+    </div>

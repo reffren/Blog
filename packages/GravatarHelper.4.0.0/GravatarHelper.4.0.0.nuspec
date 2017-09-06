@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>GravatarHelper</id>
+    <version>4.0.0</version>
+    <title>GravatarHelper</title>
+    <authors>Johannes Kommer</authors>
+    <owners>Johannes Kommer</owners>
+    <licenseUrl>http://creativecommons.org/publicdomain/zero/1.0/</licenseUrl>
+    <projectUrl>https://github.com/jkommer/GravatarHelper/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A simple ASP.NET MVC3/4/5 helper for Gravatar providing extension methods to HtmlHelper and UrlHelper. Example usage: @Html.Gravatar("MyEmailAddress@example.com", 80, new { Title = "My Gravatar", Alt = "Gravatar" })</description>
+    <summary>A simple ASP.NET MVC3/4/5 helper for Gravatar.</summary>
+    <releaseNotes>- Package now includes both .NET 4.0 and 4.5 libraries.
+- Moved the core Gravatar methods into a seperate library for use in GravatarHelper.AspNetCore.
+- GravatarRating and the static GravatarHelper have moved from GravatarHelper to GravatarHelper.Common.
+- Updated Repository url to GitHub.</releaseNotes>
+    <tags>MVC3 MVC4 MVC5 Gravatar</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.0">
+        <dependency id="GravatarHelper.Common" version="1.1.0" />
+        <dependency id="Microsoft.AspNet.Mvc" version="3.0.20105.1" />
+      </group>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="GravatarHelper.Common" version="1.1.0" />
+        <dependency id="Microsoft.AspNet.Mvc" version="3.0.20105.1" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

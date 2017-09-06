@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>GravatarHelper.Common</id>
+    <version>1.1.0</version>
+    <authors>Johannes Kommer</authors>
+    <owners>Johannes Kommer</owners>
+    <licenseUrl>http://creativecommons.org/publicdomain/zero/1.0/</licenseUrl>
+    <projectUrl>https://github.com/jkommer/GravatarHelper/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The core library used to provide Gravatar methods for both GravatarHelper and GravatarHelper.AspNetCore</description>
+    <releaseNotes>- Initial public release</releaseNotes>
+    <tags>Gravatar</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.0" />
+      <group targetFramework=".NETFramework4.5" />
+      <group targetFramework="Unsupported0.0">
+        <dependency id="NETStandard.Library" version="1.6.1" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

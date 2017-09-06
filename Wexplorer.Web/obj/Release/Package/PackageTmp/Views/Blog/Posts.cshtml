@@ -1,6 +1,16 @@
 ﻿@model Wexplorer.Web.Models.PostsModel
 @{
-    ViewBag.Title = "Posts";
+    if ((Int16) Model.PagingInfo.CurrentPage > 1) 
+    {
+        ViewBag.Canonical = "http://wexplorer.ru/page" + Model.PagingInfo.CurrentPage;
+        ViewBag.Title = "Блог Тимура Казанского - страница " + Model.PagingInfo.CurrentPage + " из " + Model.PagingInfo.TotalPages;
+    }
+    else
+    {
+        ViewBag.Canonical = "http://wexplorer.ru/";
+        ViewBag.Title = "Блог Тимура Казанского";
+    }
+    ViewBag.Description = "программирование, стартапы, путешествия и жизнь";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div itemscope itemtype="http://schema.org/Blog" class="posts">

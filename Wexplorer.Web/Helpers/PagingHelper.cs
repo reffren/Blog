@@ -26,10 +26,10 @@ namespace Wexplorer.Web.Helpers
             return MvcHtmlString.Create(result.ToString());
         }
 
-        public static MvcHtmlString PostLink(this HtmlHelper html, string post_title, string post_file_name, string category_url, string view) // Category needs us just for segment in url
-        {
-            return html.ActionLink(post_title, view, "Blog", new { cat = category_url, title = post_file_name }, new { title = post_title, @class = "post_preview_a" }); // cat needs us just for segment in url
-        }
+        //public static MvcHtmlString PostLink(this HtmlHelper html, string post_title, string post_file_name, string category_url, string view) // Category needs us just for segment in url
+        //{
+        //    return html.ActionLink(post_title, view, "Blog", new { cat = category_url, title = post_file_name }, new { title = post_title, @class = "post_preview_a" }); // "cat" needs us just for segment in url
+        //}
 
         public static MvcHtmlString CategoryLink(this HtmlHelper html, string category_name, string category_url, string view)
         {

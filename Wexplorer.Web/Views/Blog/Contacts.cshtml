@@ -1,5 +1,7 @@
 ﻿@{
-    ViewBag.Title = "Contacts";
+    ViewBag.Canonical = "http://wexplorer.ru/contacts";
+    ViewBag.Title = "Контакты";
+    ViewBag.Description = "Контактные данные по которым вы всегда можете связаться с мной";
 }
 
 <div itemscope itemtype="http://schema.org/PostalAddress" class="post">
@@ -14,3 +16,4 @@
         &rarr; E-mail: <span itemprop="email">emailtotimur@gmail.com</span>
     </p><br>
 </div>
+@Html.Partial("BestPages")

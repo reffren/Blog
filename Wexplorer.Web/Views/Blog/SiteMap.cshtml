@@ -1,6 +1,8 @@
 ﻿@model IEnumerable<Wexplorer.Data.Entities.Category>
 @{
-    ViewBag.Title = "SiteMap";
+    ViewBag.Canonical = "http://wexplorer.ru/sitemap";
+    ViewBag.Title = "Список статей";
+    ViewBag.Description = "Все статьи блога Тимура Казанского";
 }
 <div class="site_map">
     @foreach (var categories in Model)
@@ -9,7 +11,7 @@
             <h3 itemprop="name" class="sitemap_h3">@categories.NameCategory</h3>
             @foreach (var posts in categories.Posts)
             {
-                <p itemprop="itemListElement" class="sitemap_p">&rarr; @Html.PostLink(posts.Title, posts.UrlPost, posts.Category.UrlCategory, "Post")</p>
+                <p itemprop="itemListElement" class="sitemap_p">&rarr; <a class="post_preview_a" href="@("http://wexplorer.ru/" + posts.Category.UrlCategory + "/" + posts.UrlPost)">@posts.Title</a></p>
             }
         </div>
     }

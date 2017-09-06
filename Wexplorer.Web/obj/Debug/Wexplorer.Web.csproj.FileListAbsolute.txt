@@ -38,7 +38,6 @@ C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\W
 C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\Antlr3.Runtime.pdb
 C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\Newtonsoft.Json.xml
 C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\System.Web.Optimization.xml
-C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\Wexplorer.Web.dll.config
 C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\Wexplorer.Web.dll
 C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\Wexplorer.Web.pdb
 C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\Antlr3.Runtime.dll
@@ -78,3 +77,7 @@ C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\ru\System.Web.Mvc.resources.dll
 C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\obj\Debug\Wexplorer.Web.csprojResolveAssemblyReference.cache
 C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\obj\Debug\Wexplorer.Web.dll
 C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\obj\Debug\Wexplorer.Web.pdb
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\GravatarHelper.Common.dll
+C:\Users\Tim\Desktop\Wexplorer\Wexplorer.Web\bin\GravatarHelper.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\GravatarHelper.Common.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Wexplorer\Wexplorer.Web\bin\GravatarHelper.dll

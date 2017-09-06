@@ -49,6 +49,12 @@
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="GravatarHelper">
+      <HintPath>..\packages\GravatarHelper.4.0.0\lib\net45\GravatarHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="GravatarHelper.Common">
+      <HintPath>..\packages\GravatarHelper.Common.1.1.0\lib\net45\GravatarHelper.Common.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -108,14 +114,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Blog.css" />
-    <Content Include="Content\Images\error.png" />
-    <Content Include="Content\photo_for_preview\preview-rewriterule-step5.jpg" />
-    <Content Include="Content\photo_for_preview\preview-vk_step_six.jpg" />
+    <Content Include="Content\images\error.png" />
+    <Content Include="Content\images\logo.jpg" />
+    <Content Include="Content\podpiska.gif" />
+    <Content Include="Content\social\fb.png" />
+    <Content Include="Content\social\google.png" />
+    <Content Include="Content\social\rss.png" />
+    <Content Include="Content\social\vk.png" />
+    <Content Include="Content\images\tim.jpg" />
     <Content Include="Global.asax" />
+    <None Include="Properties\PublishProfiles\wex.pubxml" />
     <None Include="Properties\PublishProfiles\wexplorer.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="photo_for_preview\preview-skorost-sayta.jpg" />
+    <Content Include="photo_for_preview\preview-vk_step_six.jpg" />
     <Content Include="Scripts\customJSValidation.js" />
     <None Include="Scripts\jquery-3.1.1-vsdoc.js" />
+    <Content Include="Scripts\hide_url.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.js" />
@@ -173,6 +188,8 @@
     <Content Include="Views\ErrorHandler\Index.cshtml" />
     <Content Include="Views\ErrorHandler\NotFound.cshtml" />
     <Content Include="Views\Admin\Login.cshtml" />
+    <Content Include="Views\Shared\BestPages.cshtml" />
+    <Content Include="Views\Shared\Comments.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -182,6 +199,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="photo_for_articles\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Wexplorer.Data\Wexplorer.Data.csproj">
